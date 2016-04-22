@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra", "..\Ilegra2\Ilegra\Ilegra.csproj", "{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra", "Ilegra\Ilegra.csproj", "{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Core", "..\Ilegra2\Ilegra.Core\Ilegra.Core.csproj", "{E09F97BC-119A-4237-BF79-076CEEBC7FA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Core", "Ilegra.Core\Ilegra.Core.csproj", "{E09F97BC-119A-4237-BF79-076CEEBC7FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.DomainQueries", "..\Ilegra2\Ilegra.DomainQueries\Ilegra.DomainQueries.csproj", "{7CD4557A-C7E9-400F-B133-170DAFFEB3B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.DomainQueries", "Ilegra.DomainQueries\Ilegra.DomainQueries.csproj", "{7CD4557A-C7E9-400F-B133-170DAFFEB3B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.FileUtils", "..\Ilegra2\Ilegra.FileUtils\Ilegra.FileUtils.csproj", "{4234F993-28C1-4FA7-96BA-6B8F224C5EA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.FileUtils", "Ilegra.FileUtils\Ilegra.FileUtils.csproj", "{4234F993-28C1-4FA7-96BA-6B8F224C5EA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.BlockingQueue", "..\Ilegra2\Ilegra.Infrastructure.BlockingQueue\Ilegra.Infrastructure.BlockingQueue.csproj", "{13FD7869-778D-4DAF-85CC-9B9F5A052BC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.BlockingQueue", "Ilegra.Infrastructure.BlockingQueue\Ilegra.Infrastructure.BlockingQueue.csproj", "{13FD7869-778D-4DAF-85CC-9B9F5A052BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.FileReader", "..\Ilegra2\Ilegra.Infrastructure.FileReader\Ilegra.Infrastructure.FileReader.csproj", "{E2316478-6605-4430-9FC7-E4150C4ADF71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.FileReader", "Ilegra.Infrastructure.FileReader\Ilegra.Infrastructure.FileReader.csproj", "{E2316478-6605-4430-9FC7-E4150C4ADF71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.FileWriter", "..\Ilegra2\Ilegra.Infrastructure.FileWriter\Ilegra.Infrastructure.FileWriter.csproj", "{F3F508FF-B2F3-407C-A755-CF00AF29793D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.FileWriter", "Ilegra.Infrastructure.FileWriter\Ilegra.Infrastructure.FileWriter.csproj", "{F3F508FF-B2F3-407C-A755-CF00AF29793D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.Parser", "..\Ilegra2\Ilegra.Infrastructure.Parser\Ilegra.Infrastructure.Parser.csproj", "{0C61E6BB-0193-479A-8ACA-1CEC7A68B387}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.Parser", "Ilegra.Infrastructure.Parser\Ilegra.Infrastructure.Parser.csproj", "{0C61E6BB-0193-479A-8ACA-1CEC7A68B387}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
