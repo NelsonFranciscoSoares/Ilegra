@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra", "Ilegra.csproj", "{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.FileReader", "Ilegra.Infrastructure.FileReader\Ilegra.Infrastructure.FileReader.csproj", "{E2316478-6605-4430-9FC7-E4150C4ADF71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Core", "Ilegra.Core\Ilegra.Core.csproj", "{E09F97BC-119A-4237-BF79-076CEEBC7FA0}"
@@ -19,16 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.Infrastructure.FileW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra.FileUtils", "Ilegra.FileUtils\Ilegra.FileUtils.csproj", "{4234F993-28C1-4FA7-96BA-6B8F224C5EA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ilegra", "Ilegra\Ilegra.csproj", "{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E2316478-6605-4430-9FC7-E4150C4ADF71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E2316478-6605-4430-9FC7-E4150C4ADF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2316478-6605-4430-9FC7-E4150C4ADF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{4234F993-28C1-4FA7-96BA-6B8F224C5EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4234F993-28C1-4FA7-96BA-6B8F224C5EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4234F993-28C1-4FA7-96BA-6B8F224C5EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

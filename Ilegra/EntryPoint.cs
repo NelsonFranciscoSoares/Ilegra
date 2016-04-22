@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Ilegra.FileUtils;
 using Ilegra.Infrastructure.BlockingQueue;
 using Ilegra.Infrastructure.FileReader;
+using Ilegra.Infrastructure.FileWriter;
 using Ilegra.Infrastructure.Parser;
 
 namespace Ilegra
@@ -60,7 +61,10 @@ namespace Ilegra
             var nameTheWorstSalesman = DomainQueries.DomainQueries.TheWorstSalesman(salesList);
 
             //Step 4 - Write to output file the results of calculated values
-
+            using (var writer = new FileWriter(@"data\out\flatfile.done.dat"))
+            {
+                
+            }
 
         }
     }

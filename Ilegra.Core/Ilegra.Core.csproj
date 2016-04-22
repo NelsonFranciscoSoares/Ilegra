@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D1529DAC-F440-427F-8FCD-DF91DB61CAAB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{E09F97BC-119A-4237-BF79-076CEEBC7FA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ilegra</RootNamespace>
-    <AssemblyName>Ilegra</AssemblyName>
+    <RootNamespace>Ilegra.Core</RootNamespace>
+    <AssemblyName>Ilegra.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -29,9 +29,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,38 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntryPoint.cs" />
+    <Compile Include="IDataWriter.cs" />
+    <Compile Include="Interfaces\IDataReader.cs" />
+    <Compile Include="Interfaces\IParser.cs" />
+    <Compile Include="Interfaces\IQueue.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Sales.cs" />
+    <Compile Include="Models\SalesDetail.cs" />
+    <Compile Include="Models\Salesman.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ilegra.Core\Ilegra.Core.csproj">
-      <Project>{e09f97bc-119a-4237-bf79-076ceebc7fa0}</Project>
-      <Name>Ilegra.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ilegra.DomainQueries\Ilegra.DomainQueries.csproj">
-      <Project>{7cd4557a-c7e9-400f-b133-170daffeb3b5}</Project>
-      <Name>Ilegra.DomainQueries</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ilegra.FileUtils\Ilegra.FileUtils.csproj">
-      <Project>{4234f993-28c1-4fa7-96ba-6b8f224c5ea8}</Project>
-      <Name>Ilegra.FileUtils</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ilegra.Infrastructure.BlockingQueue\Ilegra.Infrastructure.BlockingQueue.csproj">
-      <Project>{13fd7869-778d-4daf-85cc-9b9f5a052bc4}</Project>
-      <Name>Ilegra.Infrastructure.BlockingQueue</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ilegra.Infrastructure.FileReader\Ilegra.Infrastructure.FileReader.csproj">
-      <Project>{e2316478-6605-4430-9fc7-e4150c4adf71}</Project>
-      <Name>Ilegra.Infrastructure.FileReader</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ilegra.Infrastructure.FileWriter\Ilegra.Infrastructure.FileWriter.csproj">
-      <Project>{f3f508ff-b2f3-407c-a755-cf00af29793d}</Project>
-      <Name>Ilegra.Infrastructure.FileWriter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ilegra.Infrastructure.Parser\Ilegra.Infrastructure.Parser.csproj">
-      <Project>{0c61e6bb-0193-479a-8aca-1cec7a68b387}</Project>
-      <Name>Ilegra.Infrastructure.Parser</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
