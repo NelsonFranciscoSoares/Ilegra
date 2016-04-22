@@ -11,13 +11,7 @@ namespace Ilegra.DomainQueries
     {
         public static int NumberOfCustomers(IEnumerable<Customer> customers)
         {
-            return customers.GroupBy(param => param.CNPJ,
-                param => param,
-                (key, value) => new
-                {
-                    CNJPJ = key,
-                    Count = value.Count()
-                }).Max(param => param.Count);
+            return customers.GroupBy(param => param.CNPJ).Count();
         }
 
         public static int NumberOfSalesman(IEnumerable<Salesman> salesman)
