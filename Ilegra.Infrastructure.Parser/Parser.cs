@@ -7,8 +7,8 @@ namespace Ilegra.Infrastructure.Parser
 {
     public class Parser : IParser
     {
-        private const string CUSTOMER_IDENTIFIER = "001";
-        private const string SALESMAN_IDENTIFIER = "002";
+        private const string SALESMAN_IDENTIFIER = "001";
+        private const string CUSTOMER_IDENTIFIER = "002";
         private const string SALES_IDENTIFIER = "003";
         
         public IEnumerable<Customer> ParseCustomerData(Dictionary<int, string> inputData)
@@ -44,7 +44,7 @@ namespace Ilegra.Infrastructure.Parser
                 {
                     salesman.Add(new Salesman
                     {
-                        Id = SALES_IDENTIFIER,
+                        Id = SALESMAN_IDENTIFIER,
                         CPF = dataSplitted[1],
                         Name = dataSplitted[2],
                         Salary = decimal.Parse(dataSplitted[3])

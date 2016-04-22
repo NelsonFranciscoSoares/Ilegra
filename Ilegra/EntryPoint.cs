@@ -63,7 +63,7 @@ namespace Ilegra
             //Step 4 - Write to output file the results of calculated values
             using (var writer = new FileWriter(@"data\out\flatfile.done.dat"))
             {
-                
+                writer.Write(numberOfCustomers, numberOfSalesMen, idTheMostExpensiveSale, nameTheWorstSalesman);
             }
 
         }

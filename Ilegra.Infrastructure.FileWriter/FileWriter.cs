@@ -31,7 +31,6 @@ namespace Ilegra.Infrastructure.FileWriter
             sb.AppendLine(string.Format("Amount of Customers : {0}", amountOfCustomers));
             sb.AppendLine(string.Format("Amount of Customers : {0}", amountOfSalesman));
             sb.AppendLine(string.Format("The most expensive saleId : {0}", mostExpensiveSaleId));
-            sb.AppendLine(string.Format("The most expensive saleId : {0}", mostExpensiveSaleId));
             sb.AppendLine(string.Format("The worst salesman : {0}", nameWorstSale));
 
             this.Writer.Write(sb.ToString());

@@ -22,33 +22,35 @@ namespace Ilegra.DomainQueries
 
         public static int NumberOfSalesman(IEnumerable<Salesman> salesman)
         {
-            return salesman.GroupBy(param => param.CPF,
-                param => param,
-                (key, value) => new
-                {
-                    CPF = key,
-                    Count = value.Count()
-                }).Max(param => param.Count);
+            return salesman.GroupBy(param => param.CPF).Count();
         }
 
         public static string TheMostExpensiveSale(IEnumerable<Sales> sales)
         {
-            return
-                sales.First(
-                    param => param.Details.Any(param1 => param1.Price == param.Details.Max(param2 => param2.Price)))
-                    .SaleId;
+            return sales.GroupBy(param => param.SaleId,
+                param => param.Details,
+                (key, value) => new
+                {
+                    SaleId = key,
+                    SalesDetails = value.SelectMany(param => param)
+                })
+                .Select(param => new { param.SaleId, MaxPrice = param.SalesDetails.Max(param1 => param1.Price) })
+                .Aggregate((i, j) => i.MaxPrice > j.MaxPrice ? i : j)
+                .SaleId;
         }
 
         public static string TheWorstSalesman(IEnumerable<Sales> sales)
         {
             return sales.GroupBy(param => param.Name,
-                param => param,
+                param => param.Details,
                 (key, value) => new
                 {
                     Name = key,
-                    SalesDetails = value.SelectMany(param => param.Details),
-                    Count = value.Min(param => param.Details.Count())
-                }).First(param => param.SalesDetails.Count() == param.Count).Name;
+                    SalesDetails = value.SelectMany(param => param),
+                })
+                .Select(param => new {param.Name, CountSales = param.SalesDetails.Count()})
+                .Aggregate((i, j) => i.CountSales < j.CountSales ? i : j)
+                .Name;
         }
     }
 }
