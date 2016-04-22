@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using Ilegra.Core.Interfaces;
 
 namespace Ilegra.Infrastructure.FileReader
@@ -15,13 +16,13 @@ namespace Ilegra.Infrastructure.FileReader
             this.Reader = new StreamReader(filePath);
         }
         
-        public Dictionary<int, string> ReadFile()
+        public async Task<Dictionary<int, string>> ReadFile()
         {
             var line = string.Empty;
             var index = 0;
             var dictionary = new Dictionary<int, string>();
 
-            while ((line = this.Reader.ReadLine()) != null)
+            while ((line = await this.Reader.ReadLineAsync()) != null)
             {
                 dictionary.Add(index++, line);
             }

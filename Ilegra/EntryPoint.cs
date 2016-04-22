@@ -30,7 +30,7 @@ namespace Ilegra
 
                 using (var fileReader = new FileReader(file))
                 {
-                    fileData = fileReader.ReadFile();    
+                    fileData = fileReader.ReadFile().Result;    
                 }
 
                 //Run in parallel the data parse

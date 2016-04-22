@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Ilegra.Core.Interfaces
 {
     public interface IDataReader : IDisposable
     {
-        Dictionary<int, string> ReadFile();
+        Task<Dictionary<int, string>> ReadFile();
     }
 }
